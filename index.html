@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Academy RPG</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Top Status Bar -->
+        <div class="status-bar">
+            <div class="hp-container">
+                <span class="label">HP</span>
+                <div class="hp-bar">
+                    <div class="hp-fill"></div>
+                </div>
+            </div>
+            <div class="level-container">
+                <span class="label">LVL:</span>
+                <span class="level-value">1</span>
+                <div class="xp-bar">
+                    <div class="xp-fill"></div>
+                </div>
+                <span class="xp-text">0/100</span>
+            </div>
+        </div>
+
+        <!-- Main Game Area -->
+        <div class="game-area">
+            <div class="game-content">
+                <!-- Dynamic game content will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="nav-bar">
+            <button class="nav-button" data-action="map">MAP</button>
+            <button class="nav-button" data-action="inv">INV</button>
+            <button class="nav-button" data-action="profile">PROFILE</button>
+            <button class="nav-button" data-action="quest">QUEST</button>
+            <button class="nav-button" data-action="help">HELP</button>
+        </div>
+    </div>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
